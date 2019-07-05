@@ -1,0 +1,127 @@
+body
+{
+    margin: 0;
+    font-family: 'Saira', sans-serif;
+    background: white;
+}
+.container
+{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+}
+.header
+{
+    background: #000;
+    color: cyan;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header a
+{
+    color: cyan;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+.menu
+{
+    height: inherit;
+}
+.header ul 
+{
+    display: flex;
+    height: inherit;
+}
+header ul li
+{
+    height: inherit;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.hero
+{
+    height: 300px;
+    background: #000;
+    color: cyan;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1em;
+    grid-template-areas: "hero-title hero-image";
+}
+.hero-image
+{
+    grid-area: hero-image;
+    max-height: 280px;
+}
+.hero-title
+{
+    grid-area: hero-title;
+    font-size: 4em;
+}
+.services
+{
+    background: #000;
+    color: lightgray;
+    height: 300px;
+    padding: 1em;
+    display: grid;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.portfolio
+{
+    height: 300px;
+    padding: 1em;
+    color: cyan;
+    background: #000;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "portfolio-text portfolio-text portfolio-text"
+    "anmvea ecodomus andal";
+}
+.portfolio-text
+{
+    grid-area: portfolio-text;
+}
+.anmvea
+{
+    max-width: 250px;
+    grid-area: anmvea;
+}
+.ecodomus
+{
+    max-width: 250px;
+    grid-area: ecodomus;
+}
+.andal
+{
+    max-width: 250px;
+    grid-area: andal;
+}
+.podcast
+{
+    padding: 1em;
+    color: white;
+    background: #000;
+}
