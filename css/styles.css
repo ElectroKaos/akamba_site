@@ -1,6 +1,7 @@
 body
 {
     margin: 0;
+    background: #000;
     font-family: 'Saira', sans-serif;
     background: white;
 }
@@ -52,7 +53,7 @@ ul
 {
     height: 300px;
     background: #000;
-    color: cyan;
+    color: #0071bc;
     display: grid;
     justify-items: center;
     align-items: center;
