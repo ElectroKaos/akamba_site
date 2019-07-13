@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    background: #000;
+    background-size: 100vw;
     font-family: 'Saira', sans-serif;
     background: white;
 }
@@ -59,17 +59,18 @@ ul
     align-items: center;
     grid-template-columns: repeat(2,1fr);
     padding: 1em;
-    grid-template-areas: "hero-title hero-image";
+    grid-template-areas: "hero-image2 hero-image";
 }
 .hero-image
 {
     grid-area: hero-image;
     max-height: 280px;
 }
-.hero-title
+.hero-image2
 {
-    grid-area: hero-title;
-    font-size: 4em;
+    grid-area: hero-image2;
+    max-width: 512px;
+    /* font-size: 4em; */
 }
 .services
 {
