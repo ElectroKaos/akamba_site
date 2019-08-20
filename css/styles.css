@@ -206,3 +206,35 @@ ul
 .contact h3 {
     color: cyan;
 }
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 100vw;
+    }
+    .hero
+    {
+        height: 600px;
+        grid-template-areas: "hero-image2" "hero-image";
+    }
+    .hero-image2 {
+        max-width: 90vw;
+    }
+    .services {
+        height: 600px;;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .portfolio {
+        height: 600px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        grid-template-areas: 
+        "portfolio-text"
+        "anmvea"
+        "ecodomus"
+        "andal";
+    }
+    .footer h4{
+        font-size: 80%;
+    }
+}
