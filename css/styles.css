@@ -3,13 +3,7 @@ body
     margin: 0;
     background-size: 100vw;
     font-family: 'Saira', sans-serif;
-    background: white;
-}
-.container
-{
-    max-width: 1024px;
-    margin: 0 auto;
-    display: grid;
+    background: #000;
 }
 .header
 {
@@ -95,6 +89,7 @@ ul
     justify-content: center;
     align-items: center;
 }
+
 .portfolio
 {
     height: 300px;
