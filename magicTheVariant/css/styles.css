@@ -33,7 +33,7 @@ form {
     justify-content: center;
     text-align: center;
 }
-.submit {
+.btn {
     border: .25rem solid silver;
     border-radius: 2rem;
     color: white;
