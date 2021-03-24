@@ -7,21 +7,30 @@ const gameType = {
 const form = document.querySelectorAll('form');
 const submitButton = form[0].querySelector('button[type="submit"]');
 const modeButton = document.getElementById('gameMode');
+const rulesButton = document.getElementById('rules')
 const getDataForm = (event) => {
     event.preventDefault();
     let formData = new FormData(form[0]);
     currentPlayers = formData.get('players')
+
     const gameVariant = (currentPlayers) => {
         if (currentPlayers >= 3) {
-            document.getElementById('gameMode').innerHTML = gameType.freeForAll[0];
+            modeButton.innerHTML = gameType.freeForAll[0];
         } else {
-            document.getElementById('gameMode').innerHTML = gameType.emperorGeneral[0];
+            modeButton.innerHTML = gameType.emperorGeneral[0];
         }
     }
     gameVariant(currentPlayers);
 }
 const printRules = () => {
-    document.getElementById('rules').innerHTML += gameType.freeForAll[1];
+    let counter = 0;
+    if (counter <= 1) {
+        rulesButton.innerHTML = gameType.freeForAll[2];
+        counter++;
+    } else {
+        rulesButton.disabled = true;
+    }
+    
 }
 
 submitButton.addEventListener('click', getDataForm)

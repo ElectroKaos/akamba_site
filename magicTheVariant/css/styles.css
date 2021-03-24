@@ -20,7 +20,7 @@ main {
     background: linear-gradient(var(--primary-color), var(--secondary-color));
     color: white;
     display: grid;
-    grid-template-rows: 15% 20% 20% 35% 10%;
+    grid-template-rows: 15% 20% 20% 10% 25% 10%;
 }
 main h1 {
     text-align: center;
@@ -76,12 +76,11 @@ main footer {
     font-family: Arial, Helvetica, sans-serif;
     align-self: center;
     padding: 0 0 0 1.8rem;
-    grid-area: 5 / 1 / 6 /1;
+    grid-area: 6 / 1 / 7 /1;
 }
 h4 {
     text-align: center;
     font-size: 1.6rem;
-    
 }
 a {
     font-size: 1.6rem;
