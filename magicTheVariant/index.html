@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <title>Magic the Variant</title>
 </head>
 <body>
-    <header class="header"></header>
     <main>
-        
+        <h1>Magic the Variant</h1>
+        <form action="">
+            <label class="players" for="players">
+                <span>How many players are?</span>
+                <input type="number" id="players" name="players" placeholder="Jugadores" required>
+            </label>
+            <button class="submit" type="submit">Play</button>
+        </form>
+        <h4 id="gameMode"></h4>
+        <footer>Akamba Tech. Coding Life.</footer>
     </main>
-    <footer class="footer"></footer>
+    <script src="./js/index.js"></script>
+
 </body>
 </html>

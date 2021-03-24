@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #4a3412;
+    --secondary-color: #77351e;
+    --tertiary-color: #455d68;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Berkshire Swash', cursive;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    color: white;
+    display: grid;
+    grid-template-rows: 15% 20% 20% 35% 10%;
+}
+main h1 {
+    text-align: center;
+    align-self: center;
+    font-size: 3rem;
+}
+form {
+    justify-self: center;
+    grid-area: 2 / 1 / 4 / 1;
+    justify-content: center;
+    text-align: center;
+}
+.submit {
+    border: .25rem solid silver;
+    border-radius: 2rem;
+    color: white;
+    padding: 1.5rem 3.2rem;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: .4rem .2rem;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    background-color: transparent;
+    outline: none;
+}
+main .players {
+    font-size: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+.players input {
+    background-color: transparent;
+    width: 50%;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Muli", sans-serif;
+    margin-bottom: 2rem;
+    padding: 0px 2rem;
+    outline: none;
+    height: 4rem;
+}
+main footer {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    padding: 0 0 0 1.8rem;
+    grid-area: 5 / 1 / 6 /1;
+}
+h4 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+a {
+    font-size: 1.6rem;
+}
