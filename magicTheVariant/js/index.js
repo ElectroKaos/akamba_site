@@ -6,6 +6,7 @@ const gameType = {
     }
 const form = document.querySelectorAll('form');
 const submitButton = form[0].querySelector('button[type="submit"]');
+const modeButton = document.getElementById('gameMode');
 const getDataForm = (event) => {
     event.preventDefault();
     let formData = new FormData(form[0]);
@@ -19,5 +20,9 @@ const getDataForm = (event) => {
     }
     gameVariant(currentPlayers);
 }
+const printRules = () => {
+    document.getElementById('rules').innerHTML += gameType.freeForAll[1];
+}
 
 submitButton.addEventListener('click', getDataForm)
+modeButton.addEventListener('click', printRules)
