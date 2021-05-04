@@ -24,6 +24,7 @@ const getDataForm = (event) => {
 }
 const printRules = () => {
     let counter = 0;
+    let modeName;
     if (counter <= 1) {
         rulesButton.innerHTML = gameType.freeForAll[2];
         counter++;

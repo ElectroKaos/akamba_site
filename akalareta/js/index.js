@@ -1,19 +1,17 @@
 const messages = [
     "Paranormal",
-    "Escuela",
+    "Pedas",
     "Amigos",
-    "Trabajo",
-    "Familia",
     "Pareja",
+    "Rock",
+    "Pop",
+    "Reggaeton",
     "Mascotas",
-    "Vocación",
-    "Matrix",
     "La Uni",
-    "La Playa",
+    "Belinda",
+    "Música",
     "Microsoft",
-    "Freeconomics",
     "Las caricatutas de los sábados",
-    "Batman"
 ];
 
 let counter = 0;
