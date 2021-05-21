@@ -1,6 +1,5 @@
 const messages = [
     "Paranormal",
-    "Pedas",
     "Amigos",
     "Pareja",
     "Rock",
@@ -10,8 +9,14 @@ const messages = [
     "La Uni",
     "Belinda",
     "Música",
-    "Microsoft",
-    "Las caricatutas de los sábados",
+    "Drogas",
+    "Michael Jackson",
+    "Tu torta favorita",
+    "Las ferias",
+    "Tus fobias",
+    "Bandas Mexas",
+    "Bandas internacionales",
+    "Héroes de acción"
 ];
 
 const randomMsg = () => {
